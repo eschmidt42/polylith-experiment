@@ -1,0 +1,6 @@
+.keep
+.venv
+.pytest_cache
+__pycache__
+dist
+.envrc
