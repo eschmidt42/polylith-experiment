@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "quotes_cli"
+version = "0.1.0"
+description = ""
+authors = ["eschmidt42 <11818904+eschmidt42@users.noreply.github.com>"]
+license = ""
+
+# manually added
+packages = [
+    { include = "experiment/typer_cli", from = "../../bases" },
+    {include = "experiment/quotes",from = "../../components"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# manually added
+[tool.poetry.scripts]
+quotes_cli = "experiment.typer_cli.core:main"

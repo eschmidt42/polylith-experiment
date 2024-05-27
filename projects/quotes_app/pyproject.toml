@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "quotes_app"
+version = "0.1.0"
+description = ""
+authors = ["eschmidt42 <11818904+eschmidt42@users.noreply.github.com>"]
+license = ""
+
+packages = [
+    { include = "experiment/fastapi_app", from = "../../bases" },
+    {include = "experiment/quotes",from = "../../components"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = "^0.29.0"
+fastapi = "^0.111.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
